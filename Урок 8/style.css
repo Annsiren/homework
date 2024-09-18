@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.gray-container {
+    width: 500px;
+    background-color: #4c4b4b;
+    color: #ffffff;
+}
+
+span {
+    color: #b585e1;
+}
+
+.red-block {
+    width: 100px;
+    height: 100px;
+    background-color: #ee2a2a;
+}
+
+.violet-container {
+    width: 300px;
+    height: 80px;
+    background-color: #e0acfa
+}
+
+.violet-container__elem {
+    background-color: #9842e8;
+    color: #ffffff;
+    display: inline-block;
+}
