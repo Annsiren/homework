@@ -1,0 +1,36 @@
+.wrapper {
+  width: 60%;
+  margin: 0 auto;
+}
+
+p {
+  margin-top: 30px;
+}
+
+.first {
+  font-family: 'Open Sans', serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.second {
+  text-decoration: line-through;
+}
+
+.third {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.fourth {
+  word-spacing: 30px;
+  text-decoration: overline wavy;
+  text-shadow: 1px 1px 1px #851b5cac;
+}
+
+.fifth {
+  text-decoration: underline solid 4px;
+  letter-spacing: 5px;
+}
