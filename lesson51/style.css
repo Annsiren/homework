@@ -1,0 +1,79 @@
+.cards-section {
+  background: #222222;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.cards-section__inner {
+  width: 100%;
+}
+
+.cards-section__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 50%;
+  aspect-ratio: 2/1;
+  height: 250px;
+  display: flex;
+  background-color: #222222;
+}
+
+.card--reverse {
+  flex-direction: row-reverse;
+}
+
+.card__info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__inner {
+  width: 95%;
+  aspect-ratio: 1/1;
+  border: dotted 3px #546c56;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__price {
+  color: rgb(205, 172, 128);
+  margin-bottom: 5px;
+}
+
+.card__pic {
+  width: 15px;
+}
+
+.card__pic img {
+  width: 100%;
+}
+
+.card__title {
+  color: #c9c8c8;
+  margin-bottom: 5px;
+}
+
+.card__description {
+  color: #484747;
+  text-align: center;
+  width: 70%;
+}
+
+.card__image {
+  width: 50%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./img/meal.jpg');
+  background-size: contain;
+}
+

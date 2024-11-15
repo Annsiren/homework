@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./style.css">
+  <title>BEM naming</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="#" class="header__logo">
+        <img src="#" alt="логотип">
+      </a>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Menu</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Book A Table</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Features</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Blog</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Shop</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Elements</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="controls">
+        <button class="header__button">Book A Table</button>
+        <ul class="user-nav">
+          <li class="user-nav__item">
+            <a href="#" class="user-nav__item">
+              <img src="#" alt="">
+            </a>
+          </li>
+          <li class="user-nav__item">
+            <a href="#" class="user-nav__item">
+              <img src="#" alt="">
+            </a>
+          </li>
+          <li class="user-nav__item">
+            <a href="#" class="user-nav__item">
+              <img src="#" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <section class="welcome">
+    <div class="container">
+      <p class="welcome__subtitle">Welcome To Steak In</p>
+      <h1 class="welcome__title">We are food masters!</h1>
+      <p class="welcome__paragraph">Steak in has a perfect place to enjoy fine food and great coctails with exellent
+        service, in comfortable atmospheric surroundings</p>
+      <button class="welcome__button">Book your table now</button>
+    </div>
+  </section>
+  <section class="greetings">
+    <div class="container">
+      <!-- нижележащий блок является одновременно элементом секции и самостоятельным блоком "titles-block" для дальнейшего переиспользования -->
+      <div class="greetings__titles-block titles-block">
+        <p class="titles-block__subtitle">Hello Dear</p>
+        <h2 class="titles-block__title">We are Steak In!</h2>
+        <div class="titles-block">
+          <img src="#" alt="">
+        </div>
+      </div>
+      <p class="greetings__paragraph">
+        <!-- я не стала вручную переписывать текст параграфа -->
+      </p>
+      <div class="greetings__signature-pic">
+        <img src="#" alt="signature">
+      </div>
+    </div>
+  </section>
+  <section class="cards-section">
+    <div class="container">
+      <div class="cards-section__inner">
+        <ul class="cards-section__list">
+          <!-- не совсем уверена в стоке ниже, хотела сделать карточку и элементом блока cards-section, и одновременно самостоятельным блоком -->
+          <li class="cards-section__item card">
+            <div class="card__info">
+              <div class="card__inner">
+                <p class="card__price">$25,25</p>
+                <p class="card__title">Grilled American Fillet</p>
+                <div class="card__pic">
+                  <img src="./img/pic.jpg" alt="">
+                </div>
+                <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, commodi?
+                </p>
+              </div>
+            </div>
+            <div class="card__image">
+            </div>
+          </li>
+          <li class="cards-section__item card">
+            <div class="card__info">
+              <div class="card__inner">
+                <p class="card__price">$25,25</p>
+                <p class="card__title">Grilled American Fillet</p>
+                <div class="card__pic">
+                  <img src="./img/pic.jpg" alt="">
+                </div>
+                <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, commodi?
+                </p>
+              </div>
+            </div>
+            <div class="card__image">
+            </div>
+          </li>
+          <li class="cards-section__item card card--reverse">
+            <div class="card__info">
+              <div class="card__inner">
+                <p class="card__price">$25,25</p>
+                <p class="card__title">Grilled American Fillet</p>
+                <div class="card__pic">
+                  <img src="./img/pic.jpg" alt="">
+                </div>
+                <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, commodi?
+                </p>
+              </div>
+            </div>
+            <div class="card__image">
+            </div>
+          </li>
+          <li class="cards-section__item card card--reverse">
+            <div class="card__info">
+              <div class="card__inner">
+                <p class="card__price">$25,25</p>
+                <p class="card__title">Grilled American Fillet</p>
+                <div class="card__pic">
+                  <img src="./img/pic.jpg" alt="">
+                </div>
+                <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, commodi?
+                </p>
+              </div>
+            </div>
+            <div class="card__image">
+            </div>
+          </li>
+          <li class="cards-section__item card">
+            <div class="card__info">
+              <div class="card__inner">
+                <p class="card__price">$25,25</p>
+                <p class="card__title">Grilled American Fillet</p>
+                <div class="card__pic">
+                  <img src="./img/pic.jpg" alt="">
+                </div>
+                <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, commodi?
+                </p>
+              </div>
+            </div>
+            <div class="card__image">
+            </div>
+          </li>
+          <li class="cards-section__item card">
+            <div class="card__info">
+              <div class="card__inner">
+                <p class="card__price">$25,25</p>
+                <p class="card__title">Grilled American Fillet</p>
+                <div class="card__pic">
+                  <img src="./img/pic.jpg" alt="">
+                </div>
+                <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, commodi?
+                </p>
+              </div>
+            </div>
+            <div class="card__image">
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="quote">
+    <div class="container">
+      <div class="quote__inner">
+        <div class="quote__stars"></div>
+        <p class="quote__text"></p>
+        <div class="quote__avatar"></div>
+        <div class="quote__author"></div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
