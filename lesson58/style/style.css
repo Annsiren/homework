@@ -1,0 +1,45 @@
+.square {
+  margin: 0 auto;
+  top: 300px;
+  width: 300px;
+  height: 300px;
+  background: #3c3c3c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: .5s;
+}
+
+.square::before {
+  content: '';
+  width: 100px;
+  height: 30px;
+  position: absolute;
+  top: -80px;
+  left: -50%;
+  background-color: #ff0000;
+  opacity: 0;
+  transition: background 3s ease-out, opacity .2s, width 3s;
+}
+
+.square::after {
+  content: 'Успех!';
+  position: absolute;
+  top: 50%;
+  left: 41%;
+  color: #96ffbc;
+  opacity: 0;
+  transition: opacity 0s 3s;
+}
+
+.square:hover::after {
+  opacity: 1;
+  color: #96ffbc;
+}
+
+.square:hover::before {
+  background-color: #00ff95;
+  width: 600px;
+  opacity: 1;
+}
