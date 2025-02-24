@@ -1,43 +1,37 @@
 (function () {
+  document.addEventListener("click", burgerInit);
 
-    document.addEventListener('click', burgerInit)
+  function burgerInit(evt) {
+    const target = evt.target;
+    const burgerIcon = target.closest(".burger-icon");
+    const burgerNavLink = target.closest(".nav__link");
 
-    function burgerInit(e) {
+    if (!burgerIcon && !burgerNavLink) return;
+    if (document.documentElement.clientWidth > 900) return;
 
-        const burgerIcon = e.target.closest('.burger-icon')
-        const burgerNavLink = e.target.closest('.nav__link')
-
-        if (!burgerIcon && !burgerNavLink) return
-        if (document.documentElement.clientWidth > 900) return
-
-        if (!document.body.classList.contains('body--opened-menu')) {
-            document.body.classList.add('body--opened-menu')
-        } else {
-            document.body.classList.remove('body--opened-menu')
-        }
-
+    if (!document.body.classList.contains("body--opened-menu")) {
+      document.body.classList.add("body--opened-menu");
+    } else {
+      document.body.classList.remove("body--opened-menu");
     }
+  }
 
-    const modal = document.querySelector('.modal')
-    const modalButton = document.querySelector('.about__img-button')
+  const buttonOpenModal = document.querySelector('.about__img-button');
+  buttonOpenModal.addEventListener('click', (evt) => {
+    evt.preventDefault()
+    console.log('123')
+    document.body.classList.add('body--opened-modal')
+  })
 
-    modalButton.addEventListener('click', openModal)
-    modal.addEventListener('click', closeModal)
-
-    function openModal(e) {
-        e.preventDefault()
-        document.body.classList.toggle('body--opened-modal')
+  const modal = document.querySelector('.modal');
+  modal.addEventListener('click', (evt) => {
+    const target = evt.target;
+    if (target.classList.contains('modal') || target.closest('.modal__cancel')) {
+      document.body.classList.remove('body--opened-modal')
     }
-
-    function closeModal(e) {
-        e.preventDefault()
-
-        const target = e.target
-
-        if (target.closest('.modal__cancel') || target.classList.contains('modal')) {
-            document.body.classList.remove('body--opened-modal')
-        }
-
-    }
-
-})()
+  });
+  document.addEventListener('keydown', (evt) => {
+    if (evt.code === 'Escape') document.body.classList.remove('body--opened-modal')
+  })
+  }
+)();
