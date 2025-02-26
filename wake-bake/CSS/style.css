@@ -949,6 +949,7 @@ body {
     opacity: 0;
     visibility: hidden;
     transition: var(--transition);
+    background: var(--general-bg);
   }
   .nav__list {
     flex-direction: column;
