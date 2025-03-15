@@ -133,4 +133,35 @@
   
   });
 
+
+  const test = new Swiper('.testimonials__slider', {
+
+    spaceBetween: 0,
+    slidesPerView: 1,
+    centeredSlides: true,
+    initialSlide: 1,
+    loop: true,
+  
+    navigation: {
+      nextEl: '.testimonials__next',
+      prevEl: '.testimonials__prev',
+    },
+
+    scrollbar: {
+      el: '.swiper-scrollbar',
+      draggable: true,
+      dragSize: 132,
+    },
+
+    breakpoints: {
+      1201: {
+        slidesPerView: 2,
+      },
+      901: {
+        slidesPerView: 1.5,
+      }
+    }
+  
+  });
+
 })();
